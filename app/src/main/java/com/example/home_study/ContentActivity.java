@@ -63,15 +63,77 @@ public class ContentActivity extends AppCompatActivity {
     {
         contentList.clear();
 
-        if (bookTitle.equals("Biology")) {
-            contentList.add(new Content("Introduction to Biology", "Biology", R.drawable.biology, null));
-            contentList.add(new Content("Cell Structure and Function", "Biology", R.drawable.biology, null));
-            contentList.add(new Content("Genetics", "Biology", R.drawable.biology, null));
-        } else if (bookTitle.equalsIgnoreCase("Physics")) {
-            contentList.add(new Content("Introduction to Physics", "Physics", R.drawable.physics, null));
-            contentList.add(new Content("Motion and Forces", "Physics", R.drawable.physics, null));
-            contentList.add(new Content("Energy and Work", "Physics", R.drawable.physics, null));
-        } else {
+        if (bookTitle.equals("English")) {
+            contentList.add(new Content("Content", "English", R.drawable.english, null));
+            contentList.add(new Content("Learning to learn", "UNIT 1", R.drawable.english, null));
+            contentList.add(new Content("Places to visit", "UNIT 2", R.drawable.english, null));
+            contentList.add(new Content("Hobbies and crafts", "UNIT 3", R.drawable.english, null));
+            contentList.add(new Content("Revision 1 (Units 1–3)", "REVISION", R.drawable.english, null));
+
+            contentList.add(new Content("Food for health", "UNIT 4", R.drawable.english, null));
+            contentList.add(new Content("HIV and AIDS", "UNIT 5", R.drawable.english, null));
+            contentList.add(new Content("Media, TV and Radio", "UNIT 6", R.drawable.english, null));
+            contentList.add(new Content("Revision 2 (Units 4–6)", "REVISION", R.drawable.english, null));
+
+            contentList.add(new Content("Cities of the future", "UNIT 7", R.drawable.english, null));
+            contentList.add(new Content("Money and finance", "UNIT 8", R.drawable.english, null));
+            contentList.add(new Content("People and traditional culture", "UNIT 9", R.drawable.english, null));
+            contentList.add(new Content("Revision 3 (Units 7–9)", "REVISION", R.drawable.english, null));
+
+            contentList.add(new Content("Newspapers and magazines", "UNIT 10", R.drawable.english, null));
+            contentList.add(new Content("Endangered animals", "UNIT 11", R.drawable.english, null));
+            contentList.add(new Content("Stigma and discrimination", "UNIT 12", R.drawable.english, null));
+            contentList.add(new Content("Revision 4 (Units 10–12)", "REVISION", R.drawable.english, null));
+
+
+
+        }else if (bookTitle.equalsIgnoreCase("Mathematics")) {
+            contentList.add(new Content("Biology and technology", " ", R.drawable.physics, null));
+            contentList.add(new Content("Motion and Forces", " ", R.drawable.physics, null));
+            contentList.add(new Content("Energy and Work", "  ", R.drawable.physics, null));
+            contentList.add(new Content("Work", "History", R.drawable.physics, null));
+
+        }else if (bookTitle.equalsIgnoreCase("Physics")) {
+            contentList.add(new Content("Introduction to Physics", "History", R.drawable.physics, null));
+            contentList.add(new Content("Motion and Forces", "History", R.drawable.physics, null));
+            contentList.add(new Content("Energy and Work", "History", R.drawable.physics, null));
+            contentList.add(new Content("Work", "History", R.drawable.physics, null));
+
+        }else if (bookTitle.equalsIgnoreCase("Biology")) {
+            contentList.add(new Content("Content", "Biology", R.drawable.biology, null));
+            contentList.add(new Content("Biology and technology", "UNIT 1", R.drawable.biology, null));
+            contentList.add(new Content("Cell biology", "UNIT 2", R.drawable.biology, null));
+            contentList.add(new Content("Human biology and health", "UNIT 3", R.drawable.biology, null));
+            contentList.add(new Content("Micro-organisms and disease", "UNIT 4", R.drawable.biology, null));
+            contentList.add(new Content("Classification", "UNIT 5", R.drawable.biology, null));
+            contentList.add(new Content("Environment", "UNIT 6", R.drawable.biology, null));
+
+
+
+        }else if (bookTitle.equalsIgnoreCase("Chemistry")) {
+            contentList.add(new Content("Content", "Chemistry", R.drawable.chemistry, null));
+            contentList.add(new Content("Structure of the Atom", "UNIT 1", R.drawable.chemistry, null));
+            contentList.add(new Content("Periodic Classification of the Elements", "UNIT 2", R.drawable.chemistry, null));
+            contentList.add(new Content("Chemical Bonding and Intermolecular Forces", "UNIT 3", R.drawable.chemistry, null));
+            contentList.add(new Content("Chemical Reaction and Stoichiometery", "UNIT 4", R.drawable.chemistry, null));
+            contentList.add(new Content("Physical States of Matter", "UNIT 5", R.drawable.chemistry, null));
+
+
+
+
+        }else if (bookTitle.equalsIgnoreCase("Geography")) {
+            contentList.add(new Content("Introduction to Physics", " ", R.drawable.physics, null));
+            contentList.add(new Content("Motion and Forces", " ", R.drawable.physics, null));
+            contentList.add(new Content("Energy and Work", " ", R.drawable.physics, null));
+            contentList.add(new Content("Work", " ", R.drawable.physics, null));
+
+        }else if (bookTitle.equalsIgnoreCase("History")) {
+            contentList.add(new Content("Introduction to Physics", " ", R.drawable.physics, null));
+            contentList.add(new Content("Motion and Forces", "", R.drawable.physics, null));
+            contentList.add(new Content("Energy and Work", " ", R.drawable.physics, null));
+            contentList.add(new Content("Work", " ", R.drawable.physics, null));
+        }
+        else {
 //            contentList.add(new Content("Default Chapter 1", bookTitle, R.drawable.default_image, null));
 //            contentList.add(new Content("Default Chapter 2", bookTitle, R.drawable.default_image, null));
         }
