@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="examCenterToolBar" type="id" />
+    <item name="backBtn" type="id" />
+    <item name="questionCounter" type="id" />
+    <item name="question" type="id" />
+    <item name="questionChoose" type="id" />
+    <item name="explanation" type="id" />
+    <item name="previousBtn" type="id" />
+    <item name="nextBtn" type="id" />
+    <item name="title" type="id" />
+</resources>

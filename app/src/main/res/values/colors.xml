@@ -7,5 +7,8 @@
     <color name="pr_low">#9CA8E8</color>
     <color name="black_low">#B1ACAC</color>
     <color name="Green">#63CF48</color>
+    <color name="selected_option">#BC007AFB</color>
+    <color name="unselected_option">#FFFFFF</color>
+
 
 </resources>

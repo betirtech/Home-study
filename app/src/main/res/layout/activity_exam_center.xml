@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExamCenterActivity">
+    tools:context=".ExamCenterActivity"
+    android:background="#98007AFB">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/examCenterToolBar"
@@ -13,32 +14,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:backgroundTint="@color/primary_secondary"
-        android:background="@color/primary_secondary"
+        android:backgroundTint="#00007AFB"
+        android:background="#BC007AFB"
 
         >
         <ImageView
             android:id="@+id/backBtn"
-            android:layout_width="35dp"
-            android:layout_height="30dp"
-            android:src="@drawable/back"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_ios"
             android:scaleType="centerCrop"
+
             />
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Questions"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             android:textSize="18sp"
             android:fontFamily="@font/roboto_regular"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             />
     </androidx.appcompat.widget.Toolbar>
 
+
+
+
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="520dp"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         app:cardCornerRadius="20dp"
         android:elevation="20dp"
@@ -62,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:text="Question Counter"
                 android:textColor="@color/black_low"
                 />
@@ -71,7 +76,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Question here"
-                android:textSize="18dp"
+                android:textSize="22dp"
+                android:paddingTop="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textStyle="bold"
                 />
 
             <RadioGroup
@@ -79,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:paddingTop="14dp"
                 >
             </RadioGroup>
 
@@ -86,46 +95,43 @@
                 android:id="@+id/explanation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="15dp"
                 android:text="Explanation"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:fontFamily="@font/risque_regular"
                 />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
 
-                >
-
-
-                <Button
-                    android:id="@+id/previousBtn"
-                    android:layout_width="98dp"
-                    android:layout_height="60dp"
-                    android:text="Previous"
-                    android:textSize="12sp"
-                    android:layout_gravity="start"
-                    android:layout_weight="1"
-                    />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="@integer/material_motion_duration_long_1"
-                    />
-                <Button
-                    android:id="@+id/nextBtn"
-                    android:layout_width="98dp"
-                    android:layout_height="60dp"
-                    android:text="Next"
-                    android:textSize="12sp"
-                    android:layout_gravity="left"
-                    android:layout_weight="1"
-                    />
-
-            </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/previousBtn"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="Previous"
+                android:textSize="16sp"
+                android:backgroundTint="#BEBFC1"/>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="Next"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
 
 
     </androidx.cardview.widget.CardView>

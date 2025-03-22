@@ -15,23 +15,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardExam"
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="10dp"
-                >
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardExam"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="170dp"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                >-->
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@color/primary_secondary"
-                    />
-            </androidx.cardview.widget.CardView>
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="170dp"-->
+<!--                    android:src="@color/primary_secondary"-->
+<!--                    />-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
 
 
 
@@ -42,19 +44,20 @@
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_marginBottom="8dp"
-                android:text="Text Books"
+                android:text="Exams"
                 android:fontFamily="@font/roboto_regular"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/cardExam"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp" />
+               android:paddingLeft="20dp"/>
+<!--                app:layout_constraintTop_toBottomOf="@id/cardExam"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginLeft="20dp" />-->
 
             <TextView
                 android:id="@+id/text_des"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Find course you want to study"
+                android:text="Find Exam you want to Take"
                 app:layout_constraintTop_toBottomOf="@id/textBook"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:layout_marginTop="5dp"
